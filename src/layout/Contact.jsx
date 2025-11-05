@@ -10,7 +10,7 @@ const Contact = () => {
       id="contact"
     >
       <div className="container ">
-        <Heading title="Gei in" titleSpan="Touch" />
+        <Heading title="Get in" titleSpan="Touch" />
 
         <div className="row contact-row  ">
           <div className="col-1   w-full  md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 about-info flex flex-col item-center gap-2">
