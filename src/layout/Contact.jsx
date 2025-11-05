@@ -26,7 +26,7 @@ const Contact = () => {
               name="email"
               id="email"
               placeholder="Enter email address"
-              className="p-2 outline-0 border-0 bg-yellow-100 rounded-2xl"
+              className="p-2 pl-4 outline-0 border-0 bg-yellow-100 rounded-2xl"
             />
             <Button buttonName="Subsribe" className="items-start" />
           </div>
