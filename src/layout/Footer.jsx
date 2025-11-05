@@ -30,7 +30,7 @@ const Footer = () => {
             type="email"
             placeholder="Enter Email..."
             id="email-input"
-            class="p-1 outline-0 border-0 bg-yellow-100 rounded-2xl w-full md:w-7/9"
+            class="p-1 pl-4 outline-0 border-0 bg-yellow-100 rounded-2xl w-full md:w-7/9"
           />
           <input
             type="submit"
