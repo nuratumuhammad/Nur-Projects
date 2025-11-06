@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@import "tailwindcss";
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  h1 {
+    @apply text-3xl text-center sm:text-4xl text-gray-100 font-semibold;
+  }
+  p {
+    @apply text-gray-300;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto w-full h-full  p-5 flex flex-col items-center gap-3 justify-between shadow-2xl bg-white;
+  }
+  .row {
+    @apply flex flex-col md:flex-row  w-full h-auto md:h-5/6  gap-6  md:gap-2 p-1 md:p-4;
+  }
+  .work-row {
+    @apply md:flex-col;
+  }
+  .featured-row {
+    @apply flex-row md:flex-row md:h-auto xl:h-5/6 gap-2 flex-wrap mx-auto;
+  }
+  .contact-row {
+    @apply flex-col-reverse md:flex-row-reverse gap-6;
+  }
+  .gallery-row {
+    @apply 2xl:h-5/6 p-4 grid grid-cols-3 sm:grid-cols-6 md:grid-cols-9 lg:grid-cols-12  grid-rows-2 bg-yellow-50;
+  }
+  .teams-row {
+    @apply flex-row;
+  }
+
+  .btn-outline {
+    @apply px-5 py-2.5 border-1 border-white hover:border-yellow-300 text-gray-100 hover:text-yellow-300 text-xl rounded-lg;
+  }
+  .navbar-links {
+    @apply sm:flex hidden  items-center gap-1 capitalize;
+  }
+  .navbar-link {
+    @apply tracking-wide text-lg text-white opacity-75 hover:text-amber-300;
+  }
+  .work-navbar .navbar-item {
+    @apply p-2 border-2 border-yellow-300 rounded-2xl  hover:border-yellow-600;
+  }
+  .work-navbar .navbar-link {
+    @apply text-yellow-400 hover:border-yellow-600;
+  }
+}
